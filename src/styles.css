@@ -2,7 +2,7 @@
 
 * {
   font-family: "Lato", sans-serif;
-  background-color: rgb(234, 234, 234);
+  background-color: #f2f2f2;
 }
 
 body {
@@ -13,7 +13,7 @@ input {
   background-color: white;
   border-radius: 5px;
   border: 1px solid rgb(97, 32, 158);
-  color: black;
+  color: #181818;
   font-size: 1.2rem;
   outline: none;
   padding: 10px 15px;
@@ -22,7 +22,13 @@ input {
 
 .loading {
   text-align: center;
-  color: rgba(0, 0, 0, 0.541);
+  color: #181818;
+}
+
+h1,
+h2,
+h3 {
+  color: #181818;
 }
 
 h2 {
@@ -54,19 +60,28 @@ h3 {
   justify-content: center;
   margin-bottom: 20px;
   margin-right: 20px;
+  text-decoration: none;
   overflow: hidden;
 }
 
 .card p {
-  background-color: white;
-  color: rgba(0, 0, 0, 0.616);
+  background-color: transparent;
+  color: rgb(151, 32, 151);
   flex: 1;
   font-size: 1.5rem;
   margin-top: 5px;
   padding: 5px 20px 0px 20px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .card img {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
 }
